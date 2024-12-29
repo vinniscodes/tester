@@ -1,0 +1,750 @@
+/* Reset de estilo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+/* Imagem de fundo para todo o site */
+/* Estilos gerais */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.header-top img {
+    width: 150px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none; /* Esconde o menu em telas menores */
+    }
+
+    .header-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll; /* Desativa o fundo fixo em telas pequenas */
+        padding-top: 80px; /* Ajuste para um espaço menor no celular */
+    }
+    
+    /* Ajuste de fontes e tamanhos em telas menores */
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1.2rem;
+    }
+
+    .nav-links a {
+        font-size: 1rem; /* Ajusta o tamanho dos links no menu */
+    }
+    
+    /* Ajuste o tamanho das imagens no carrossel */
+    .carousel img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Estilos para telas muito pequenas */
+    body {
+        padding-top: 60px; /* Reduz o espaço superior ainda mais para smartphones pequenos */
+    }
+    
+    .hero-text h1 {
+        font-size: 1.8rem; /* Fonte menor em telas menores */
+    }
+
+    .hero-text p {
+        font-size: 1rem; /* Texto menor para economizar espaço */
+    }
+
+    .nav-links a {
+        font-size: 0.9rem; /* Menus menores */
+    }
+
+    /* Para o carrossel */
+    .carousel img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-top img {
+    height: 70px; 
+    width: auto;
+}
+ /* .top-header {
+    background-color: rgba(0, 0, 0, 0.0); /* aqui altera o top header obsd*/
+   /* color: #333 ;
+    position: relative;
+    font-size: 14px;
+    text-align: right;
+    padding: 10px 5px;
+    top: 1;
+    width: 100%;
+    z-index: 1;  
+    
+} */
+
+.contact-info span {
+    margin: 0 20px;
+}
+
+.contact-info img {
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+
+
+/* Estilo para o header com transparência */
+/* Estilo para o header (movido para baixo) */
+header {
+    background-image: url('fundopage.jpg'); /* Substitua com o caminho da sua imagem */
+    background-position: center;
+    background-size: cover; /* Faz a imagem de fundo cobrir toda a área */
+    height: 70vh; /* Define que o header ocupará toda a altura da tela */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center;
+    color: white; /* Ajuste a cor do texto conforme necessário */
+    padding: 0 20px; /* Adiciona padding para garantir que o conteúdo não encoste nas bordas */
+}
+header .hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+header .hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+.hero-text{
+    color: white;
+}
+header .btn {
+    background-color: #ff9800;
+    padding: 15px 30px;
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+header .btn:hover {
+    background-color: #e68900;
+}
+
+/* Estilo responsivo para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    header .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    header .hero-text p {
+        font-size: 1.2rem;
+    }
+
+    header .btn {
+        padding: 10px 20px;
+    }
+}
+
+
+/* Seções */
+section {
+    padding: 60px 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.section-title p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.section-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+.section-content p {
+    margin-bottom: 20px;
+}
+
+/* Carrossel */
+#logos {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 2px;
+}
+
+.carousel {
+    display: flex;
+    gap: 20px;
+    animation: scroll 10s linear infinite;
+}
+
+.carousel-item {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Botão CTA */
+.cta-button {
+    background-color: #e63946;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.cta-button:hover {
+    background-color: #d62828;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(34, 34, 34, 0.8);  /* Cinza com transparência */
+    padding: 10px 20px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(5px); /* Suaviza o fundo para efeito moderno */
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Efeito hover com fundo branco sutil */
+    transform: scale(1.05);  /* Dá um pequeno zoom no link */
+}
+.nav-links.hidden {
+    transform: translateY(-100%);
+}
+.hero-text h1 {
+    font-size: 4em;
+    margin: 0;
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateY(30px);  /* Levemente deslocado para baixo */
+    animation: fadeInUp 1.5s ease forwards;  /* Animação personalizada */
+}
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-slide img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;  /* Arredonda as bordas das imagens */
+}
+.carousel-section {
+    margin-top: -px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.3s;
+    border-radius: 5px;
+    user-select: none;
+    background: rgba(0, 0, 0, 0.5);
+}
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+    animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+    from { opacity: 0.4 }
+    to { opacity: 1 }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);  /* Retorna à posição original */
+    }
+}
+footer {
+    background-color: #222;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.contact-info a {
+    color: #f4a020;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.footer-address {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.footer-address p {
+    font-size: 14px;
+    color: #bbb;
+}
+
+.footer p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #bbb;
+}
+#sobre {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+/* Estilo geral para as seções */
+section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+/* Estilo de cada item das seções */
+.section-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* Efeito de hover nas seções */
+.section-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Ícones do FontAwesome */
+.section-item i {
+    font-size: 3rem;
+    color: #f4a020; /* Cor de destaque */
+    margin-bottom: 20px;
+}
+
+
+.section-item h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Parágrafos */
+.section-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+    }
+
+    .section-item {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+.whatsapp-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;  
+    padding: 15px 25px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+    font-family: 'Arial', sans-serif;
+}
+
+.whatsapp-link {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.whatsapp-icon {
+    width: 30px; 
+    margin-right: 10px;
+}
+
+.whatsapp-popup span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Efeito hover */
+.whatsapp-popup:hover {
+    background-color: #128c7e;  /* Cor do WhatsApp quando passar o mouse */
+}
+
+.whatsapp-popup:active {
+    transform: scale(0.98);  /* Efeito de clique */
+}
+/* Estilo para o conteúdo dentro do header */
+.hero-text h1 {
+    font-size: 4em;
+    color: #333; /* Cor do texto */
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 1.5em;
+    color: #666; /* Cor do texto */
+    margin: 10px 0 30px;
+}
+
+.hero-text .btn {
+    padding: 15px 30px;
+    background-color: #f4a020;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+#contato {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+/* Título */
+#contato h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px; 
+    text-align: center; 
+}
+
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.form-group {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.form-group label {
+    font-size: 1.1rem;
+    color: #333;
+    margin-right: 10px;
+    flex: 1;
+}
+
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-left: 10px;
+}
+
+
+.form-group textarea {
+    resize: vertical;
+}
+
+
+.form-group i {
+    font-size: 1.5rem;
+    color: #f4a020;
+}
+
+
+.btn-submit {
+    background-color: #f4a020;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit i {
+    font-size: 1.2rem;
+}
+
+/* Efeito de hover no botão */
+.btn-submit:hover {
+    background-color: #e4951e;
+}
+
+#nossos-numeros {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f0f0f0;
+}
+
+#nossos-numeros h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.numbers-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.number-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 150px;
+}
+
+.number-item i {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.number-item h3 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.number-item p {
+    font-size: 18px;
+    color: #777;
+}
+
+#nossos-parceiros {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f7f7f7;
+}
+
+#nossos-parceiros h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.partners-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.partner-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.partner-item img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.partner-item a {
+    display: block;
+}
+
+.partner-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.partner-item:hover img {
+    transform: scale(1.1);
+}

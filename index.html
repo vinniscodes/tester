@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UltraVM</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="src/ico/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    
+    <!-- Header Section -->
+    <div class="header-top">
+        <a href="index.html">
+            <img src="src/images/ultravmpng.png" alt="Logo">
+        </a>
+        <div class="nav-links">
+            <a href="quem-somos.html">Quem Somos</a>
+            <a href="representacoes.html">Representações</a>
+            <a href="contato.html">Contato</a>
+            <a href="area-atuacao.html">Área de atuação</a>
+            <a href="parceiros.html">Parceiros</a>
+            <a href="resultados.html">Resultados</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header>
+        <div class="hero-text">
+            <h1 class="bemvindo">Bem-vindo à UltraVM Representações</h1>
+            <p class="typing">Soluções e parcerias que impulsionam o seu negócio</p>
+            <a href="#sobre" class="btn">Saiba Mais</a>
+        </div>
+    </header>
+    
+    <!-- Carousel Section -->
+    <section class="carousel-section">
+        <div class="carousel-container">
+            <div class="carousel-slide fade">
+                <img src="src/images/image1.jpg" alt="Imagem 1">
+            </div>
+            <div class="carousel-slide fade">
+                <img src="src/images/image2.jpg" alt="Imagem 2">
+            </div>
+            <div class="carousel-slide fade">
+                <img src="src/images/image3.jpg" alt="Imagem 3">
+            </div>
+            
+            <!-- Botões de navegação -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </section>
+
+    <!-- WhatsApp Popup -->
+    <div class="whatsapp-popup">
+        <a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-link">
+            <i class="fab fa-whatsapp whatsapp-icon"></i>
+            <span>Fale pelo WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- About Section -->
+    <section id="sobre">
+        <div class="section-item">
+            <i class="fas fa-users"></i> <!-- Ícone do FontAwesome -->
+            <h2>Sobre Nós</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis eget felis eu ullamcorper.</p>
+        </div>
+    
+        <div class="section-item">
+            <i class="fas fa-box"></i> <!-- Ícone do FontAwesome -->
+            <h2>Produtos</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel ligula eget erat eleifend auctor.</p>
+        </div>
+    
+        <div class="section-item">
+            <i class="fas fa-newspaper"></i> <!-- Ícone do FontAwesome -->
+            <h2>Conteúdos</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in enim non quam feugiat auctor.</p>
+        </div>
+    </section>
+    
+
+    <!-- Our Numbers Section -->
+    <section id="nossos-numeros">
+        <h2>Nossos Números</h2>
+        <div class="numbers-container">
+            <div class="number-item">
+                <i class="fas fa-users" style="color: red;"></i>
+                <h3 id="representacoes">0</h3>
+                <p>Representações</p>
+            </div>
+            <div class="number-item">
+                <i class="fas fa-chart-line" style="color: yellow;"></i>
+                <h3 id="vendas">0</h3>
+                <p>Vendas</p>
+            </div>
+            <div class="number-item">
+                <i class="fas fa-dollar-sign" style="color: red;"></i>
+                <h3 id="faturamento">0</h3>
+                <p>Faturamento</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="nossos-parceiros">
+        <h2>Nossos Parceiros</h2>
+        <div class="partners-container">
+            <div class="partner-item">
+                <a href="https://www.friboi.com.br" target="_blank">
+                    <img src="src/images/logo_friboi_interna.png" alt="Friboi Logo">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="https://www.frigol.com.br" target="_blank">
+                    <img src="src/images/frigol-1.jpg" alt="Frigol Logo">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="https://www.frigoleste.com.br" target="_blank">
+                    <img src="src/images/frigoleste.png" alt="Frigoleste Logo">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="https://www.beauvallet.com.br" target="_blank">
+                    <img src="src/images/beauvallet.png" alt="Beauvallet Brasil Logo">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="https://www.jbs.com.br" target="_blank">
+                    <img src="src/images/logo_jbs-2.png" alt="JBS Logo">
+                </a>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Contact Section -->
+    <section id="contato">
+        <h2>Fale Conosco</h2>
+        <form action="submit_form.php" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name"><i class="fas fa-user"></i> Nome</label>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email"><i class="fas fa-envelope"></i> E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="subject"><i class="fas fa-briefcase"></i> Assunto</label>
+                <input type="text" id="subject" name="subject" placeholder="Assunto da mensagem" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="message"><i class="fas fa-comment"></i> Mensagem</label>
+                <textarea id="message" name="message" rows="4" placeholder="Escreva sua mensagem" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-contact">
+            <div class="contact-info">
+                <p><i class="fas fa-phone-alt"></i> (81) 4002-8922</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:ultravm@ultravm.com.br">ultravm@ultravm.com.br</a></p>
+                <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/teste" target="_blank">@teste</a></p>
+            </div>
+            <div class="footer-address">
+                <p><strong>Endereço:</strong> LoremIpsum, 123, Recife, PE</p>
+                <p><strong>CNPJ:</strong> 30.743.359/0001-10</p>
+            </div>
+        </div>
+        <p>&copy; 2024 UltraVM Representações. Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="src/script.js"></script>
+</body>
+</html>
